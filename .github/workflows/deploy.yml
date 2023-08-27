@@ -16,7 +16,6 @@ jobs:
           key: ${{ runner.os }}-spm-${{ hashFiles('Package.resolved') }}
           restore-keys: |
             ${{ runner.os }}-spm-
-      
       - name: Build
         run: swift run
       - name: Deploy
