@@ -8,6 +8,10 @@ let package = Package(
         .executable(
             name: "Github",
             targets: ["Github"]
+        ),
+        .library(
+            name: "GithubUtility",
+            targets: ["GithubUtility"]
         )
     ],
     dependencies: [
@@ -16,6 +20,12 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "Github",
+            dependencies: [
+                "GithubUtility"
+            ]
+        ),
+        .target(
+            name: "GithubUtility",
             dependencies: [
                 .product(name: "Plot", package: "Plot")
             ]

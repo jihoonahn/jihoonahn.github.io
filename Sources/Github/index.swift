@@ -1,5 +1,3 @@
-import Plot
-
 let html = HTML(
     head: [
         .encoding(.utf8),
