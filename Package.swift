@@ -6,12 +6,12 @@ let package = Package(
     platforms: [.macOS(.v10_15)],
     products: [
         .executable(
-            name: "Github",
-            targets: ["Github"]
+            name: "Redirect",
+            targets: ["Redirect"]
         ),
         .library(
-            name: "GithubUtility",
-            targets: ["GithubUtility"]
+            name: "Core",
+            targets: ["Core"]
         )
     ],
     dependencies: [
@@ -19,13 +19,13 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "Github",
+            name: "Redirect",
             dependencies: [
-                "GithubUtility"
+                "Core"
             ]
         ),
         .target(
-            name: "GithubUtility",
+            name: "Core",
             dependencies: [
                 .product(name: "Plot", package: "Plot")
             ]
