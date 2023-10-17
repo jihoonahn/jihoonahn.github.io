@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Jihoonahn",
+    name: "jihoonahn.github.io",
     platforms: [.macOS(.v10_15)],
     products: [
         .executable(
