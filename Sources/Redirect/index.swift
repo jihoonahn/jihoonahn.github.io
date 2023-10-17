@@ -3,7 +3,6 @@ import Core
 
 @main
 struct Index {
-    /// Index html
     static var html: HTML {
         HTML(
             head: [
@@ -25,7 +24,7 @@ struct Index {
             }
         }
     }
-    /// start main
+    /// Start Index
     static func main() async throws {
         try html
             .render()
