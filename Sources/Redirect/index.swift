@@ -9,12 +9,12 @@ struct Index {
                 .encoding(.utf8),
                 .meta(
                     .attribute(named: "http-equiv", value: "refresh"),
-                    .content("2;url=https://github.com/Jihoonahn")
+                    .content("2;url=https://github.com/jihoonahn")
                 ),
                 .script(
                     .attribute(named: "type", value: "text/javascript"),
                     .text("""
-                    location.href = 'https://github.com/Jihoonahn';
+                    location.href = 'https://github.com/jihoonahn';
                     """)
                 )
             ]
