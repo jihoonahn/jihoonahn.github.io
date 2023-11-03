@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.8
 import PackageDescription
 
 let package = Package(
@@ -6,12 +6,8 @@ let package = Package(
     platforms: [.macOS(.v10_15)],
     products: [
         .executable(
-            name: "Redirect",
-            targets: ["Redirect"]
-        ),
-        .library(
-            name: "Core",
-            targets: ["Core"]
+            name: "Github",
+            targets: ["Github"]
         )
     ],
     dependencies: [
@@ -19,16 +15,8 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "Redirect",
-            dependencies: [
-                "Core"
-            ]
-        ),
-        .target(
-            name: "Core",
-            dependencies: [
-                .product(name: "Plot", package: "Plot")
-            ]
+            name: "Github",
+            path: "Sources"
         )
     ]
 )
