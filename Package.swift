@@ -16,6 +16,9 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "Github",
+            dependencies: [
+                .product(name: "Plot", package: "Plot")
+            ],
             path: "Sources"
         )
     ]
