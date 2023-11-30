@@ -1,5 +1,4 @@
 import Plot
-import Core
 
 @main
 struct Index {
