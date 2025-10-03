@@ -17,3 +17,4 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./Output
           publish_branch: gh-pages
+          cname: github.jihoon.me
